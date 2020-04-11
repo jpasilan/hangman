@@ -1,21 +1,15 @@
 # TextClient
 
-**TODO: Add description**
+A CLI client for the Hangman game.
 
-## Installation
+## Build
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `text_client` to your list of dependencies in `mix.exs`:
+Build an executable with the `mix` command below. The executable `text_client` can located within the project directory.
 
-```elixir
-def deps do
-  [
-    {:text_client, "~> 0.1.0"}
-  ]
-end
+```bash
+mix escript.build
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/text_client](https://hexdocs.pm/text_client).
+# Running
 
+Run `./text_client` with either `--sname` or `--name` switches indicating the client host node. A hangman server running at `hangman@localhost` node is assumed to be already running.
